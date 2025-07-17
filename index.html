@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Control de Gastos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Agregar Gasto</h2>
+            <form id="expense-form">
+                <input type="text" id="expense-name" placeholder="Nombre del gasto" required>
+                <input type="number" id="expense-amount" placeholder="Monto" required>
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Lista de Gastos</h2>
+            <ul id="expense-list"></ul>
+        </section>
+        <section>
+            <h2>Total Gastado</h2>
+            <p id="total-amount">0</p>
+        </section>
+    </main>
+    <script src="src/scripts/app.js"></script>
+</body>
+</html>
